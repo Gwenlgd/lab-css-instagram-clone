@@ -1,16 +1,126 @@
-/*
-Colors to use:
-dark blue: #06365f
-light blue: #1c5380
-*/
+:root {
+  --dark-blue: #06365f;
+  --light-blue: #1c5380;
+  --blue-button: #6d90af;
+  --bgd-blue: #537b9e;
+}
 * {
   box-sizing: border-box;
 }
+
+header div {
+  padding: 100px 0px;
+  background: linear-gradient(
+    174deg,
+    rgba(123, 149, 171, 1) 0%,
+    rgba(83, 123, 158, 1) 100%
+  );
+  /* position: sticky; */
+  /* z-index: 999; */
+}
+
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+  /* height: 70vh; */
+  left: 0;
+  top: 0;
 }
 
+ul,
+li {
+  text-decoration: none;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.container-inst {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* width: 100%; */
+  margin: -190px 50px 50px 50px;
+  z-index: 9999;
+  position: relative;
+}
+
+#left-page {
+  /* margin-right: 30px; */
+
+  img {
+    height: 500px;
+  }
+}
+
+#right-page {
+  /* width: 70%; */
+  padding-left: 50px;
+}
+
+.logo-connect {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.btn-login {
+  color: white;
+  font-weight: bolder;
+  border: none;
+  /* border-color: var(--dark-blue); */
+  background-color: var(--blue-button);
+  display: flex;
+  align-items: center;
+  padding: 0px 7px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  p {
+    padding-left: 8px;
+  }
+}
+
+.descr-main {
+  display: flex;
+  justify-content: center;
+}
+.background-desc {
+  position: absolute;
+  width: 55%;
+}
 .description {
-  background-image: url(../images/frame.png);
+  position: relative;
+
+  width: 70%;
+  h2 {
+    color: var(--dark-blue);
+    font-weight: bold;
+    width: 55%;
+    font-size: 25px;
+  }
+
+  span {
+    font-weight: bold;
+  }
+}
+.buttons-dld {
+  margin-top: 20px;
+}
+.do-appstore,
+.do-googleplay {
+  background: none;
+  border: none;
+}
+
+footer {
+  margin: 20px 150px;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+
+  li {
+    color: var(--light-blue);
+    font-weight: bolder;
+  }
+  li span {
+    color: grey;
+  }
 }
